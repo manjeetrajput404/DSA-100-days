@@ -12,8 +12,8 @@ class LinkedList{
     LinkedList* address;
     public:
 
-    //getter
-    void getter(string data, LinkedList* address){
+    //setter
+    void setter(string data, LinkedList* address){
         this->data = data;
         this->address = address;
     }
@@ -36,11 +36,11 @@ int main(){
     LinkedList* Third = new LinkedList();
     LinkedList* Fourth = new LinkedList();
 
-    // Note: Never use dot operator to access the getter funtion (in case of pointer only not for objects)
-    Head->getter("Aadi",Second);
-    Second->getter("Aman",Third);
-    Third->getter("Depu",Fourth);
-    Fourth->getter("Hash",NULL);
+    // Note: Never use dot operator to access the setter funtion (in case of pointer only not for objects)
+    Head->setter("Aadi",Second);
+    Second->setter("Aman",Third);
+    Third->setter("Depu",Fourth);
+    Fourth->setter("Hash",NULL);
 
     //For display the data of the Linked list
     LinkedList* temp = Head;
@@ -48,6 +48,13 @@ int main(){
         temp->display();
         temp = temp->getNext();
     }
+    cout << "NULL\n"; 
+
+    //free the Heap memory
+    delete Head;
+    delete Second;
+    delete Third;
+    delete Fourth;
 
     return 0;
 }
