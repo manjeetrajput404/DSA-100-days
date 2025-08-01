@@ -37,7 +37,6 @@ int main(){
     Third->getter("Depu",Fourth);
     Fourth->getter("Hash",NULL);
 
-
     //For display the data of the Linked list
     LinkedList* temp = Head;
     while (temp != nullptr) {  //nullptr is a predefined keyword (safer than using NULL)
