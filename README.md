@@ -19,7 +19,7 @@ This repository is a personal commitment to improve my understanding of **Data S
 
 - Daily folders/files (e.g., `Day01`, `Day02`, etc.) with:
   - Problem statements
-  - Code solutions (in C++, JavaScript, or other languages I use)
+  - Code solutions (in C++)
   - Brief explanations or notes (if needed)
 
 ---
